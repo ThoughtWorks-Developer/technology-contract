@@ -1,0 +1,35 @@
+[
+   {
+      "title": "Apache Tomcat",
+      "subtitle": "Web Server",
+      "description": "Description placeholder, not to exceed 255 characters",
+      "image": "https://icongr.am/devicon/tomcat-original.svg",
+      "_links": {
+         "self": {
+            "href": "http://localhost:3000/api/technologies/tomcat"
+         }
+      }
+   },
+   {
+      "title": "Undertow",
+      "subtitle": "Web Server",
+      "description": "Description placeholder, not to exceed 255 characters",
+      "image": "https://res.cloudinary.com/tw-developer/image/upload/assets/Icons/undertow.svg",
+      "_links": {
+         "self": {
+            "href": "http://localhost:3000/api/technologies/undertow"
+         }
+      }
+   },
+   {
+      "title": "Jetty",
+      "subtitle": "Web Server",
+      "description": "Description placeholder, not to exceed 255 characters",
+      "image": "https://res.cloudinary.com/tw-developer/image/upload/assets/Icons/jetty.svg",
+      "_links": {
+         "self": {
+            "href": "http://localhost:3000/api/technologies/jetty"
+         }
+      }
+   }
+]

@@ -1,0 +1,35 @@
+[
+   {
+      "title": "GitHub",
+      "subtitle": "Code Repository",
+      "description": "Description placeholder, not to exceed 255 characters",
+      "image": "https://icongr.am/devicon/github-original.svg",
+      "_links": {
+         "self": {
+            "href": "http://localhost:3000/api/technologies/github"
+         }
+      }
+   },
+   {
+      "title": "GitLab",
+      "subtitle": "Code Repository",
+      "description": "Description placeholder, not to exceed 255 characters",
+      "image": "https://icongr.am/devicon/gitlab-original.svg",
+      "_links": {
+         "self": {
+            "href": "http://localhost:3000/api/technologies/gitlab"
+         }
+      }
+   },
+   {
+      "title": "Bitbucket",
+      "subtitle": "Code Repository",
+      "description": "Description placeholder, not to exceed 255 characters",
+      "image": "https://icongr.am/simple/bitbucket.svg?size=128&color=currentColor&colored=true",
+      "_links": {
+         "self": {
+            "href": "http://localhost:3000/api/technologies/bitbucket"
+         }
+      }
+   }
+]

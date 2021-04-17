@@ -1,0 +1,35 @@
+[
+  {
+    "title": "System API",
+    "subtitle": "API Layer",
+    "image": "https://res.cloudinary.com/tw-developer/image/upload/assets/Icons/systemapi.svg",
+    "description": "Legacy Modernization, SaaS App Connectivity, Web Services & RESTful APIs",
+    "_links": {
+      "self": {
+        "href": "http://localhost:3000/api/technologies/systerapi"
+      }
+    }
+  },
+  {
+    "title": "Process API",
+    "subtitle": "API Layer",
+    "image": "https://res.cloudinary.com/tw-developer/image/upload/assets/Icons/processapi.svg",
+    "description": "Agility, Orchestration, Composable APIs",
+    "_links": {
+      "self": {
+        "href": "http://localhost:3000/api/technologies/processapi"
+      }
+    }
+  },
+  {
+    "title": "Experience API",
+    "subtitle": "API Layer",
+    "image": "https://res.cloudinary.com/tw-developer/image/upload/assets/Icons/systemapi.svg",
+    "description": "Purposeful APIs targeting consumer audience",
+    "_links": {
+      "self": {
+        "href": "http://localhost:3000/api/technologies/experienceapi"
+      }
+    }
+  }
+]

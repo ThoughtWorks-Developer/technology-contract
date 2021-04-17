@@ -1,0 +1,4 @@
+.DS_Store
+data/integrations.json
+data/technologies.json
+data/software_templates.json

@@ -1,0 +1,47 @@
+[
+  {
+    "title": "GitHub Package",
+    "subtitle": "Package Manager",
+    "description": "Description placeholder, not to exceed 255 characters",
+    "image": "https://res.cloudinary.com/tw-developer/image/upload/assets/Icons/github-package.svg",
+    "_links": {
+      "self": {
+        "href": "http://localhost:3000/api/technologies/github-package"
+      }
+    }
+  },
+  {
+    "title": "NuGet",
+    "subtitle": "Package Manager",
+    "image": "https://icongr.am/simple/nuget.svg?colored=true",
+    "description": "Package manager for .NET apps",
+    "versions": ["7.0", "6.8.3", "6.6.1"],
+    "_links": {
+      "self": {
+        "href": "http://localhost:3000/api/technologies/nuget"
+      }
+    }
+  },
+  {
+    "title": "npm",
+    "subtitle": "Package Manager",
+    "description": "Package manager for Javascript runtime environment",
+    "image": "https://icongr.am/simple/npm.svg?size=75&color=currentColor&colored=true",
+    "_links": {
+      "self": {
+        "href": "http://localhost:3000/api/technologies/dockerhub"
+      }
+    }
+  },
+  {
+    "title": "Go.dev",
+    "subtitle": "Package Manager",
+    "description": "Centralized information for Go packages and modules",
+    "image": "https://res.cloudinary.com/tw-developer/image/upload/assets/Icons/placeholder.svg",
+    "_links": {
+      "self": {
+        "href": "http://localhost:3000/api/technologies/dockerhub"
+      }
+    }
+  }
+]

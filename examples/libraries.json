@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Spring MVC",
+    "subtitle": "Library",
+    "icon": "https://icongr.am/simple/spring.svg?colored=true",
+    "description": "Description placeholder, not to exceed 255 characters",
+    "versions": ["5.3.4"],
+    "_links": {
+      "self": {
+        "href": "http://localhost:3000/api/technologies/springmvc"
+      }
+    }
+  },
+  {
+    "title": "Spring AMQP",
+    "subtitle": "Library",
+    "icon": "https://res.cloudinary.com/tw-developer/image/upload/v1618330721/assets/Icons/springamqp.svg",
+    "description": "Description placeholder, not to exceed 255 characters",
+    "versions": ["2.3.6"],
+    "_links": {
+      "self": {
+        "href": "http://localhost:3000/api/technologies/springamqp"
+      }
+    }
+  },
+  {
+    "title": "Spring Batch",
+    "subtitle": "Library",
+    "icon": "https://res.cloudinary.com/tw-developer/image/upload/v1618330721/assets/Icons/springamqp.svg",
+    "description": "A lightweight, comprehensive batch framework designed to enable the development of robust batch applications vital for the daily operations of enterprise systems.",
+    "versions": ["4.3.2"],
+    "_links": {
+      "self": {
+        "href": "http://localhost:3000/api/technologies/springbatch"
+      }
+    }
+  }
+]

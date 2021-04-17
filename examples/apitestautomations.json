@@ -1,0 +1,35 @@
+[
+  {
+    "title": "API Fortress",
+    "subtitle": "API Test Automation",
+    "image": "https://res.cloudinary.com/tw-developer/image/upload/assets/Icons/placeholder.svg",
+    "description": "Description placeholder, not to exceed 255 characters",
+    "_links": {
+      "self": {
+        "href": "http://localhost:3000/api/technologies/apifortress"
+      }
+    }
+  },
+  {
+    "title": "Ready API",
+    "subtitle": "API Test Automation",
+    "image": "https://res.cloudinary.com/tw-developer/image/upload/assets/Icons/placeholder.svg",
+    "description": "Description placeholder, not to exceed 255 characters",
+    "_links": {
+      "self": {
+        "href": "http://localhost:3000/api/technologies/readyapi"
+      }
+    }
+  },
+  {
+    "title": "Postman",
+    "subtitle": "API Test Automation",
+    "image": "https://icongr.am/simple/postman.svg?colored=true",
+    "description": "Description placeholder, not to exceed 255 characters",
+    "_links": {
+      "self": {
+        "href": "http://localhost:3000/api/technologies/postman"
+      }
+    }
+  }
+]

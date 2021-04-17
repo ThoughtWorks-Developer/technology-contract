@@ -1,0 +1,49 @@
+[
+  {
+    "title": "Kafka",
+    "subtitle": "Messaging",
+    "description": "Description placeholder, not to exceed 255 characters",
+    "image": "https://icongr.am/simple/apachekafka.svg?color=000000",
+    "versions": [
+      "1.0"
+    ],
+    "_links": {
+      "self": {
+        "href": "http://localhost:3000/api/technologies/kafka"
+      }
+    }
+  },
+  {
+    "title": "RabbitMQ",
+    "subtitle": "Messaging",
+    "description": "Description placeholder, not to exceed 255 characters",
+    "image": "https://icongr.am/simple/rabbitmq.svg?color=FF6600",
+    "versions": [
+      "3.8.14",
+      "3.7.6",
+      "3.7.0",
+      "3.6.14"
+    ],
+    "_links": {
+      "self": {
+        "href": "http://localhost:3000/api/technologies/rabbitmq"
+      }
+    }
+  },
+  {
+    "title": "NATS",
+    "subtitle": "Messaging",
+    "description": "NATS.io is a simple, secure and high performance open source messaging system for cloud native applications, IoT messaging, and microservices architectures.",
+    "image": "https://res.cloudinary.com/tw-developer/image/upload/assets/Icons/nats.svg",
+    "versions": [
+      "2.2",
+      "2.0"
+    ],
+    "_links": {
+      "self": {
+        "href": "http://localhost:3000/api/technologies/nat"
+      }
+    }
+  }
+  
+]

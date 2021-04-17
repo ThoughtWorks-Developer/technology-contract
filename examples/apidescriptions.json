@@ -1,0 +1,62 @@
+[
+  {
+    "title": "Swagger",
+    "subtitle": "API Description",
+    "image": "https://icongr.am/simple/swagger.svg?colored=true",
+    "description": "Description placeholder, not to exceed 255 characters",
+    "versions": [
+      "2.0",
+      "1.0"
+    ],
+    "_links": {
+      "self": {
+        "href": "http://localhost:3000/api/technologies/swagger"
+      }
+    }
+  },
+  {
+    "title": "OpenAPI",
+    "subtitle": "API Description",
+    "image": "https://icongr.am/simple/openapiinitiative.svg?colored=true",
+    "description": "Description placeholder, not to exceed 255 characters",
+    "versions": [
+      "3.0",
+      "3.1"
+    ],
+    "_links": {
+      "self": {
+        "href": "http://localhost:3000/api/technologies/openapi"
+      }
+    }
+  },
+  {
+    "title": "API Blueprint",
+    "subtitle": "API Description",
+    "image": "https://res.cloudinary.com/tw-developer/image/upload/assets/Icons/apiblueprint2.svg",
+    "description": "A powerful high-level API design language for web APIs.",
+    "versions": [
+      "Format 1A9",
+      "Format 1A8"
+    ],
+    "_links": {
+      "self": {
+        "href": "http://localhost:3000/api/technologies/apiblueprint"
+      }
+    }
+  },
+  {
+    "title": "RAML",
+    "subtitle": "API Description",
+    "image": "https://res.cloudinary.com/tw-developer/image/upload/assets/Icons/raml.svg",
+    "description": "Description placeholder, not to exceed 255 characters",
+    "versions": [
+      "1.0",
+      "0.8"
+    ],
+    "_links": {
+      "self": {
+        "href": "http://localhost:3000/api/technologies/raml"
+      }
+    }
+  }
+]

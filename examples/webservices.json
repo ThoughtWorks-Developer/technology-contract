@@ -1,0 +1,57 @@
+[
+  {
+    "title": "REST",
+    "subtitle": "Web Service",
+    "image": "https://res.cloudinary.com/tw-developer/image/upload/assets/Icons/placeholder.svg",
+    "description": "Description placeholder, not to exceed 255 characters",
+    "_links": {
+      "self": {
+        "href": "http://localhost:3000/api/technologies/rest"
+      }
+    }
+  },
+  {
+    "title": "SOAP",
+    "subtitle": "Web Service",
+    "image": "https://res.cloudinary.com/tw-developer/image/upload/assets/Icons/placeholder.svg",
+    "description": "Description placeholder, not to exceed 255 characters",
+    "_links": {
+      "self": {
+        "href": "http://localhost:3000/api/technologies/soap"
+      }
+    }
+  },
+  {
+    "title": "GraphQL",
+    "subtitle": "Web Service",
+    "image": "https://icongr.am/simple/graphql.svg?colored=true",
+    "description": "Description placeholder, not to exceed 255 characters",
+    "_links": {
+      "self": {
+        "href": "http://localhost:3000/api/technologies/graphql"
+      }
+    }
+  },
+  {
+    "title": "Feed",
+    "subtitle": "Web Service",
+    "image": "https://res.cloudinary.com/tw-developer/image/upload/assets/Icons/placeholder.svg",
+    "description": "Description placeholder, not to exceed 255 characters",
+    "_links": {
+      "self": {
+        "href": "http://localhost:3000/api/technologies/feed"
+      }
+    }
+  },
+  {
+    "title": "GRPC",
+    "subtitle": "Web Service",
+    "image": "https://res.cloudinary.com/tw-developer/image/upload/assets/Icons/grpc.svg",
+    "description": "Description placeholder, not to exceed 255 characters",
+    "_links": {
+      "self": {
+        "href": "http://localhost:3000/api/technologies/grpc"
+      }
+    }
+  }
+]

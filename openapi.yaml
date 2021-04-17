@@ -1,0 +1,280 @@
+openapi: 3.0.2
+
+info:
+  title: Technology API
+  version: v1
+  description: Reads and writes Technologies
+  license:
+    name: Apache License, Version 2.0
+    url: https://www.apache.org/licenses/LICENSE-2.0.html
+  contact:
+    name: ThoughtWorks
+    url: https://thoughtworks.com
+    
+servers:
+  - url: 'https://my-json-server.typicode.com/ThoughtWorks-Developer/tecnology-contract'
+
+tags:
+  - name: Technologies
+    description: |
+      Add your description here
+  - name: Software Templates
+    description: |
+      Add your description here
+  
+paths:
+  /technologies:
+    get:
+      tags: 
+      - Technologies
+      summary: Get list of technologies
+      description: Add description details here
+      operationId: getTechnologyList
+      responses:
+        '200':
+          description: OK
+          content:
+            'application/hal+json':
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/TechnologyResource'
+        '401':
+          $ref: '#/components/responses/401Unauthorized'
+        '403':
+          $ref: '#/components/responses/403Forbidden'
+        '500':
+          $ref: '#/components/responses/500InternalServerError'
+        '503':
+          $ref: '#/components/responses/503ServiceUnavailable'          
+    post:
+      tags: 
+        - Technologies
+      summary: Create new technology
+      description: Add description details here
+      operationId: createTechnology
+      requestBody:
+        description: a new technology object
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Technology'
+      responses:
+        '201':
+          description: Created
+        '400':
+          $ref: '#/components/responses/400BadRequest'
+        '401':
+          $ref: '#/components/responses/401Unauthorized'
+        '403':
+          $ref: '#/components/responses/403Forbidden'
+        '500':
+          $ref: '#/components/responses/500InternalServerError'
+        '503':
+          $ref: '#/components/responses/503ServiceUnavailable'  
+  /technologies/{name}:
+    get:
+      tags: 
+        - Technologies
+      summary: Get technology details
+      description: Add description details here
+      operationId: getTechnologyDetails
+      parameters:
+        - $ref: '#/components/parameters/TechnologyName'
+      responses:
+        '200':
+          description: OK
+          content:
+            'application/hal+json':
+              schema:
+                allOf:
+                - $ref: '#/components/schemas/TechnologyResource'
+      
+        '401':
+          $ref: '#/components/responses/401Unauthorized'
+        '403':
+          $ref: '#/components/responses/403Forbidden'
+        '404':
+          $ref: '#/components/responses/404NotFound'
+        '500':
+          $ref: '#/components/responses/500InternalServerError'
+        '503':
+          $ref: '#/components/responses/503ServiceUnavailable'    
+    patch:
+      tags: 
+      - Technologies
+      summary: Update technology
+      description: Updates one or more fields of a technology
+      operationId: updateTechnology
+      parameters:
+        - $ref: '#/components/parameters/TechnologyName'
+      requestBody:
+        description: technology object
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Technology'
+      responses:
+        '204':
+          description: OK
+        '400':
+          $ref: '#/components/responses/400BadRequest'
+        '401':
+          $ref: '#/components/responses/401Unauthorized'
+        '403':
+          $ref: '#/components/responses/403Forbidden'
+        '404':
+          $ref: '#/components/responses/404NotFound'
+        '500':
+          $ref: '#/components/responses/500InternalServerError'
+        '503':
+          $ref: '#/components/responses/503ServiceUnavailable'
+    delete:
+      tags: 
+      - Technologies
+      summary: Delete technology
+      description: Add description details here
+      operationId: deleteTechnology
+      parameters:
+        - $ref: '#/components/parameters/TechnologyName'
+      responses:
+        '204':
+          description: OK
+        '401':
+          $ref: '#/components/responses/401Unauthorized'
+        '403':
+          $ref: '#/components/responses/403Forbidden'
+        '404':
+          $ref: '#/components/responses/404NotFound'
+        '500':
+          $ref: '#/components/responses/500InternalServerError'
+        '503':
+          $ref: '#/components/responses/503ServiceUnavailable'
+components:
+  parameters:
+    TechnologyName:
+      name: name
+      description: The unique name of the technology to retrieve
+      schema:
+        type: string
+        minLength: 3
+        maxLength: 20
+      required: true
+      in: path
+      example: java
+  responses:
+    '400BadRequest':
+      description: Bad request
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ErrorResponse'
+          example:
+            error: Bad request
+            description: Missing required parameter.
+
+    '401Unauthorized':
+      description: Unauthorized
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ErrorResponse'
+          example:
+            error: Unauthorized
+            description: You are not authorized to view this resource
+
+    '403Forbidden':
+      description: Forbidden
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ErrorResponse'
+          example:
+            error: Forbidden
+            description: You are forbidden from accessing this resource
+
+    '404NotFound':
+      description: Not found
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ErrorResponse'
+          example:
+            error: Not found
+            description: Resource Not found.
+      
+    '500InternalServerError':
+      description: Internal Server Error
+      content:
+        application/json:
+          example:
+            error: Internal server error
+            description: An unexpected error occurred
+          schema:
+            $ref: '#/components/schemas/ErrorResponse'
+    
+    '503ServiceUnavailable':
+      description: Service unavailable
+      content:
+        application/json:
+          example:
+            error: Service unavailable
+            description: Server is not ready to handle the request.
+          schema:
+            $ref: '#/components/schemas/ErrorResponse'
+    
+  schemas:
+    Technology:
+      type: object
+      properties:
+        name:
+          type: string
+        title:
+          type: string
+        subtitle:
+          type: string
+        description:
+          type: string
+        image:
+          type: string
+          format: url
+        versions:
+          type: array
+          items:
+            type: string
+        tags:
+          type: array
+          items:
+            type: string
+    TechnologyResource:
+      type: object
+      required:
+        - _links
+      allOf:
+        - $ref: '#/components/schemas/Technology'
+      properties:
+        _links:
+          $ref: '#/components/schemas/SelfLink'
+    SelfLink:
+        type: object
+        required:
+          - self
+        properties:
+          self:
+            $ref: '#/components/schemas/ResourceLink'
+    ResourceLink:
+      type: object
+      required:
+        - href
+      properties:
+        href:
+          type: string
+          format: uri
+          description: The resource’s fully qualified location URL.
+    ErrorResponse:
+      type: object
+      properties:
+        error:
+          type: string
+        description:
+          type: string

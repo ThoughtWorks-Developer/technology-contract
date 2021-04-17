@@ -1,0 +1,138 @@
+[
+  {
+    "title": "Python",
+    "subtitle": "Language",
+    "description": "Build efficient and lightweight microservices in Python",
+    "image": "https://icongr.am/devicon/python-original.svg",
+    "versions": [
+      "3.9.4",
+      "3.8.9"
+    ],
+    "_links": {
+      "self": {
+        "href": "http://localhost:3000/api/technologies/python"
+      }
+    }
+  },
+  {
+    "title": "PHP",
+    "subtitle": "Language",
+    "description": "Description placeholder, not to exceed 255 characters",
+    "image": "https://res.cloudinary.com/tw-developer/image/upload/v1618472076/assets/Icons/php-1.svg",
+    "versions": [
+      "8.0.2"
+    ],
+    "_links": {
+      "self": {
+        "href": "http://localhost:3000/api/technologies/php"
+      }
+    }
+  },
+  {
+    "title": "NodeJS",
+    "subtitle": "Language",
+    "description": "Open-source, cross-platform, JavaScript runtime server environment",
+    "image": "https://icongr.am/devicon/nodejs-original.svg",
+    "versions": [
+      "v12",
+      "v14",
+      "v15"
+    ],
+    "_links": {
+      "self": {
+        "href": "http://localhost:3000/api/technologies/node"
+      }
+    }
+  },
+  {
+    "title": "Java",
+    "subtitle": "Language",
+    "description": "Step up to modern cloud development with Oracle Java",
+    "image": "https://icongr.am/devicon/java-original.svg",
+    "versions": [
+      "8",
+      "11",
+      "15",
+      "16"
+    ],
+    "_links": {
+      "self": {
+        "href": "http://localhost:3000/api/technologies/java"
+      }
+    }
+  },
+  {
+    "title": "Kotlin",
+    "subtitle": "Language",
+    "description": "Write easy-to-maintain lean and clean code with Kotlin for developing better microswervices",
+    "image": "https://res.cloudinary.com/tw-developer/image/upload/assets/Icons/kotlin.svg",
+    "versions": [
+      "1.2.30"
+    ],
+    "_links": {
+      "self": {
+        "href": "http://localhost:3000/api/technologies/kotlin"
+      }
+    }
+  },
+  {
+    "title": "Golang",
+    "subtitle": "Language",
+    "description": "Go is an open source programming language that makes it easy to build simple, reliable, and efficient software",
+    "image": "https://icongr.am/devicon/go-original.svg",
+    "versions": [
+      "1.15"
+    ],
+    "_links": {
+      "self": {
+        "href": "http://localhost:3000/api/technologies/golang"
+      }
+    }
+  },
+  {
+    "title": "C#",
+    "subtitle": "Language",
+    "description": "C# is a general purpose, multi-paradigm programming language developed by Microsoft that runs on the .NET framework.",
+    "image": "https://icongr.am/devicon/csharp-original.svg",
+    "versions": [
+      "7.0",
+      "8.0"
+    ],
+    "_links": {
+      "self": {
+        "href": "http://localhost:3000/api/technologies/csharp"
+      }
+    }
+  },
+  {
+    "title": "Swift",
+    "subtitle": "Language",
+    "description": "Swift is a powerful and intuitive programming language for macOS, iOS, watchOS, tvOS and beyond",
+    "image": "https://icongr.am/devicon/swift-original.svg",
+    "versions": [
+        "5.3.2",
+        "5.2.4",
+        "5.1.2"
+    ],
+    "_links": {
+      "self": {
+        "href": "http://localhost:3000/api/technologies/swift"
+      }
+    }
+  },
+  {
+      "title": "Ruby",
+      "subtitle": "Language",
+      "description": "A dynamic, open source programming language with a focus on simplicity and productivity.",
+      "image": "https://icongr.am/devicon/ruby-original.svg",
+      "versions": [
+            "2.7.2",
+            "2.4.10"
+        ],
+      "_links": {
+          "self": {
+              "href": "http://localhost:3000/api/technologies/ruby"
+          }
+      }
+  }
+]

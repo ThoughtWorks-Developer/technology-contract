@@ -1,0 +1,107 @@
+[
+  {
+    "title": "GitHub Actions",
+    "subtitle": "CI System",
+    "image": "https://icongr.am/simple/githubactions.svg?colored=true",
+    "description": "Description placeholder, not to exceed 255 characters",
+    "_links": {
+      "self": {
+        "href": "http://localhost:3000/api/technologies/githubactions"
+      }
+    }
+  },
+  {
+    "title": "Azure Pipelines",
+    "subtitle": "CI System",
+    "image": "https://icongr.am/simple/azurepipelines.svg?colored=true",
+    "description": "Description placeholder, not to exceed 255 characters",
+    "_links": {
+      "self": {
+        "href": "http://localhost:3000/api/technologies/azurepipelines"
+      }
+    }
+  },
+  {
+    "title": "Circle CI",
+    "subtitle": "CI System",
+    "image": "https://icongr.am/simple/circleci.svg?colored=true",
+    "description": "Description placeholder, not to exceed 255 characters",
+    "_links": {
+      "self": {
+        "href": "http://localhost:3000/api/technologies/circleci"
+      }
+    }
+  },
+  {
+    "title": "GitLab CI",
+    "subtitle": "CI System",
+    "image": "https://icongr.am/devicon/gitlab-original.svg",
+    "description": "Description placeholder, not to exceed 255 characters",
+    "_links": {
+      "self": {
+        "href": "http://localhost:3000/api/technologies/gitlabci"
+      }
+    }
+  },
+  {
+    "title": "Travis CI",
+    "subtitle": "CI System",
+    "image": "https://res.cloudinary.com/tw-developer/image/upload/assets/Icons/travisci.svg",
+    "description": "Description placeholder, not to exceed 255 characters",
+    "_links": {
+      "self": {
+        "href": "http://localhost:3000/api/technologies/travisci"
+      }
+    }
+  },
+  {
+    "title": "Codeship",
+    "subtitle": "CI System",
+    "image": "https://icongr.am/simple/codeship.svg?colored=true",
+    "description": "Description placeholder, not to exceed 255 characters",
+    "tags": [
+      "hosted"
+    ],
+    "_links": {
+      "self": {
+        "href": "http://localhost:3000/api/technologies/codeship"
+      }
+    }
+  },
+  {
+    "title": "Codefresh",
+    "subtitle": "CI System",
+    "image": "https://res.cloudinary.com/tw-developer/image/upload/assets/Icons/codefresh.svg",
+    "description": "CI/CD Platform built on Kubernetes. Comes with complete GitOps support",
+    "_links": {
+      "self": {
+        "href": "http://localhost:3000/api/technologies/codefresh"
+      }
+    }
+  },
+  {
+    "title": "TeamCity Cloud",
+    "subtitle": "CI System",
+    "image": "https://res.cloudinary.com/tw-developer/image/upload/assets/Icons/teamcity.svg",
+    "description": "Description placeholder, not to exceedn 255 characters",
+    "_links": {
+      "self": {
+        "href": "http://localhost:3000/api/technologies/teamcity"
+      }
+    }
+  },
+  {
+    "title": "GoCD",
+    "subtitle": "CI System",
+    "image": "https://res.cloudinary.com/tw-developer/image/upload/assets/Icons/gocd.svg",
+    "description": "Description placeholder, not to exceedn 255 characters",
+    "tags": [
+      "open-source"
+    ],
+    "_links": {
+      "self": {
+        "href": "http://localhost:3000/api/technologies/teamcity"
+      }
+    }
+  }
+]

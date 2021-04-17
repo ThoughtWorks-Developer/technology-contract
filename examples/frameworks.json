@@ -1,0 +1,248 @@
+[
+  {
+    "title": ".NET",
+    "subtitle": "Framework",
+    "description": ".NET Core is a cross-platform version of .NET for building websites, services, and console apps",
+    "image": "https://res.cloudinary.com/tw-developer/image/upload/assets/Icons/dotnet-core.svg",
+    "versions": [
+      "5.0",
+      "3.1",
+      "3.0"
+    ],
+    "_links": {
+      "self": {
+        "href": "http://localhost:3000/api/technologies/dotnet"
+      }
+    }
+  },
+  {
+    "title": "Django",
+    "subtitle": "Framework",
+    "description": "Django REST framework is a powerful and flexible toolkit for building Web APIs",
+    "image": "https://icongr.am/simple/django.svg?color=092E20",
+    "versions": [
+      "v3.12.1"
+    ],
+    "_links": {
+      "self": {
+        "href": "http://localhost:3000/api/technologies/django"
+      }
+    }
+  },
+  {
+    "title": "DropWizard",
+    "subtitle": "Framework",
+    "description": "Description placeholder, not to exceed 255 characters",
+    "image": "https://res.cloudinary.com/tw-developer/image/upload/assets/Icons/placeholder.svg",
+    "versions": [
+      "0.0"
+    ],
+    "_links": {
+      "self": {
+        "href": "http://localhost:3000/api/technologies/dropwizard"
+      }
+    }
+  },
+  {
+    "title": "Spring Boot",
+    "subtitle": "Framework",
+    "description": "Spring Boot makes it easy to create stand-alone, production-grade Spring based Applications",
+    "image": "https://res.cloudinary.com/tw-developer/image/upload/assets/Icons/placeholder.svg",
+    "versions": [
+      "2.3.4",
+      "2.4.5"
+    ],
+    "_links": {
+      "self": {
+        "href": "http://localhost:3000/api/technologies/springboot"
+      }
+    }
+  },
+  {
+    "title": "VERT.X",
+    "subtitle": "Framework",
+    "description": "Description placeholder, not to exceed 255 characters",
+    "image": "https://res.cloudinary.com/tw-developer/image/upload/assets/Icons/placeholder.svg",
+    "versions": [
+      "3.5.0"
+    ],
+    "_links": {
+      "self": {
+        "href": "http://localhost:3000/api/technologies/vertx"
+      }
+    }
+  },
+  {
+    "title": "Nameko",
+    "subtitle": "Framework",
+    "description": "A microservice framework for Python",
+    "image": "https://res.cloudinary.com/tw-developer/image/upload/assets/Icons/placeholder.svg",
+    "versions": [
+      "2.13.0"
+    ],
+    "_links": {
+      "self": {
+        "href": "http://localhost:3000/api/technologies/nameko"
+      }
+    }
+  },
+  {
+    "title": "Express",
+    "subtitle": "Framework",
+    "description": "Fast, unopinionated, minimalist web framework for Node.js",
+    "image": "https://icongr.am/devicon/express-original.svg?color=currentColor",
+    "versions": [
+      "4.17.1"
+    ],
+    "_links": {
+      "self": {
+        "href": "http://localhost:3000/api/technologies/express"
+      }
+    }
+  },
+  {
+    "title": "Rails",
+    "subtitle": "Framework",
+    "description": "Description placeholder, not to exceed 255 characters",
+    "image": "https://icongr.am/devicon/rails-original-wordmark.svg?size=128&color=currentColor",
+    "versions": [
+      "6.1",
+      "6.0",
+      "5.2",
+      "5.1"
+    ],
+    "_links": {
+      "self": {
+        "href": "http://localhost:3000/api/technologies/rails"
+      }
+    }
+  },
+  {
+    "title": "LoopBack",
+    "subtitle": "Framework",
+    "description": "A highly extensible Node.js framework for building APIs and microservices",
+    "image": "https://res.cloudinary.com/tw-developer/image/upload/assets/Icons/placeholder.svg",
+    "versions": [
+      "3",
+      "4"
+    ],
+    "_links": {
+      "self": {
+        "href": "http://localhost:3000/api/technologies/loopback"
+      }
+    }
+  },
+  {
+    "title": "Connexion",
+    "subtitle": "Framework",
+    "description": "Connexion is a framework on top of Flask to automagically handle your REST API request based on OpenAPI specification.",
+    "image": "https://icongr.am/simple/zalando.svg?colored=true",
+    "versions": [
+      "2.7.0"
+    ],
+    "tags": [ "python" ],
+    "_links": {
+      "self": {
+        "href": "http://localhost:3000/api/technologies/connexion"
+      }
+    }
+  },
+  {
+    "title": "hapi",
+    "subtitle": "Framework",
+    "description": "Build powerful, scalable applications, with minimal overhead and full out-of-the-box functionality",
+    "image": "https://res.cloudinary.com/tw-developer/image/upload/assets/Icons/placeholder.svg",
+    "versions": [
+      "v17"
+    ],
+    "_links": {
+      "self": {
+        "href": "http://localhost:3000/api/technologies/hapi"
+      }
+    }
+  },
+  {
+    "title": "restify",
+    "subtitle": "Framework",
+    "description": "The future of Node.js REST development",
+    "image": "https://res.cloudinary.com/tw-developer/image/upload/v1618423029/assets/icons/restify.svg",
+    "versions": [
+      "v7.0.0"
+    ],
+    "_links": {
+      "self": {
+        "href": "http://localhost:3000/api/technologies/restify"
+      }
+    }
+  },
+  {
+    "title": "Senaca",
+    "subtitle": "Framework",
+    "description": "A microservice toolkit for Node.js",
+    "image": "https://res.cloudinary.com/tw-developer/image/upload/assets/icons/seneca.svg",
+    "versions": [
+      "3.22.0"
+    ],
+    "_links": {
+      "self": {
+        "href": "http://localhost:3000/api/technologies/seneca"
+      }
+    }
+  },
+  {
+    "title": "Beego",
+    "subtitle": "Framework",
+    "description": "Description placeholder, not to exceed 255 characters",
+    "image": "https://res.cloudinary.com/tw-developer/image/upload/assets/Icons/placeholder.svg",
+    "versions": [
+      "0.0"
+    ],
+    "_links": {
+      "self": {
+        "href": "http://localhost:3000/api/technologies/beego"
+      }
+    }
+  },
+  {
+    "title": "Gin",
+    "subtitle": "Framework",
+    "description": "Description placeholder, not to exceed 255 characters",
+    "image": "https://res.cloudinary.com/tw-developer/image/upload/assets/Icons/placeholder.svg",
+    "versions": [
+      "0.0"
+    ],
+    "_links": {
+      "self": {
+        "href": "http://localhost:3000/api/technologies/gin"
+      }
+    }
+  },
+  {
+    "title": "Gizmo",
+    "subtitle": "Framework",
+    "description": "Gizmo helps developers quickly configure and build microservice APIs and pubsub daemons",
+    "image": "https://res.cloudinary.com/tw-developer/image/upload/assets/Icons/placeholder.svg",
+    "versions": [
+      "0.0"
+    ],
+    "_links": {
+      "self": {
+        "href": "http://localhost:3000/api/technologies/gizmo"
+      }
+    }
+  },
+  {
+    "title": "Go kit",
+    "subtitle": "Framework",
+    "description": "A programming toolkit for microservices",
+    "image": "https://res.cloudinary.com/tw-developer/image/upload/assets/Icons/placeholder.svg",
+    "versions": [
+      "v0.10.0"
+    ],
+    "_links": {
+      "self": {
+        "href": "http://localhost:3000/api/technologies/gokit"
+      }
+    }
+  }
+]

@@ -1,0 +1,13 @@
+[
+  {
+    "title": "Slack",
+    "subtitle": "Communication Tool",
+    "image": "https://res.cloudinary.com/tw-developer/image/upload/assets/Icons/slack.svg",
+    "description": "Description placeholder, not to exceed 255 characters",
+    "_links": {
+      "self": {
+        "href": "http://localhost:3000/api/technologies/slack"
+      }
+    }
+  }
+]

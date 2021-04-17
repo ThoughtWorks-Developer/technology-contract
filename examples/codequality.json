@@ -1,0 +1,48 @@
+[
+  {
+    "title": "sonarcloud",
+    "subtitle": "Code Quality",
+    "image": "https://icongr.am/simple/sonarcloud.svg?colored=true",
+    "description": "Description placeholder, not to exceed 255 characters",
+    "tags": ["open-source"],
+    "_links": {
+      "self": {
+        "href": "http://localhost:3000/api/technologies/sonarcloud"
+      }
+    }
+  },
+  {
+    "title": "SonarQube",
+    "subtitle": "Code Quality",
+    "image": "https://icongr.am/simple/sonarqube.svg?colored=true",
+    "description": "Description placeholder, not to exceed 255 characters",
+    "tags": ["open-source"],
+    "_links": {
+      "self": {
+        "href": "http://localhost:3000/api/technologies/sonarqube"
+      }
+    }
+  },
+  {
+    "title": "Codacy",
+    "subtitle": "Code Quality",
+    "image": "https://icongr.am/simple/codacy.svg?colored=true",
+    "description": "Description placeholder, not to exceed 255 characters",
+    "_links": {
+      "self": {
+        "href": "http://localhost:3000/api/technologies/codacy"
+      }
+    }
+  },
+  {
+    "title": "Veracode",
+    "subtitle": "Code Quality",
+    "image": "https://res.cloudinary.com/tw-developer/image/upload/assets/Icons/placeholder.svg",
+    "description": "Description placeholder, not to exceed 255 characters",
+    "_links": {
+      "self": {
+        "href": "http://localhost:3000/api/technologies/veracode"
+      }
+    }
+  }
+]

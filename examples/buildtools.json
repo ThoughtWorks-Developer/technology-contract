@@ -1,0 +1,50 @@
+[
+  {
+    "title": "Maven",
+    "subtitle": "Build Tool",
+    "image": "https://icongr.am/simple/apachemaven.svg?colored=true",
+    "description": "Description placeholder, not to exceed 255 characters",
+    "versions": ["3.8.1", "3.5.4", "3.3.9"],
+    "_links": {
+      "self": {
+        "href": "http://localhost:3000/api/technologies/maven"
+      }
+    }
+  },
+  {
+    "title": "Gradle",
+    "subtitle": "Build Tool",
+    "image": "https://icongr.am/simple/gradle.svg?colored=true",
+    "description": "Description placeholder, not to exceed 255 characters",
+    "versions": ["7.0", "6.8", "5.6"],
+    "_links": {
+      "self": {
+        "href": "http://localhost:3000/api/technologies/gradle"
+      }
+    }
+  },
+  {
+    "title": "GNU",
+    "subtitle": "Build Tool",
+    "image": "https://icongr.am/simple/gnu.svg?colored=true",
+    "description": "Description placeholder, not to exceed 255 characters",
+    "versions": ["7.0", "6.8.3", "6.6.1"],
+    "_links": {
+      "self": {
+        "href": "http://localhost:3000/api/technologies/gnu"
+      }
+    }
+  },
+  {
+    "title": "PyBuilder",
+    "subtitle": "Build Tool",
+    "image": "https://res.cloudinary.com/tw-developer/image/upload/assets/Icons/pybuilder.svg",
+    "description": "PyBuilder is a software build automation tool written in pure Python mainly targeting Python ecosystem",
+    "version": ["0.12", "0.11", "0.10"],
+    "_links": {
+      "self": {
+        "href": "http://localhost:3000/api/technologies/pyb"
+      }
+    }
+  }
+]
