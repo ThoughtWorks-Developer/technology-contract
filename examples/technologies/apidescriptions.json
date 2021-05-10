@@ -20,8 +20,9 @@
     "image": "https://icongr.am/simple/openapiinitiative.svg?colored=true",
     "description": "Description placeholder, not to exceed 255 characters",
     "versions": [
-      "3.0",
-      "3.1"
+      "3.1.0",
+      "3.0.0",
+      "3.0.2"
     ],
     "_links": {
       "self": {

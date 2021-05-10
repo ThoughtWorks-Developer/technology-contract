@@ -1,0 +1,10 @@
+{
+    "title": "Framework",
+    "image": "https://res.cloudinary.com/tw-developer/image/upload/assets/Icons/placeholder.svg",
+    "description": "Description placeholder, not to exceed 255 characters",
+    "_links": {
+      "self": {
+        "href": "http://localhost:3000/api/technology_types/56756a7e-f752-40ec-9e92-8882be37d3d3"
+      }
+    }
+}

@@ -57,7 +57,7 @@
     ],
     "_links": {
       "self": {
-        "href": "http://localhost:3000/api/technologies/java"
+        "href": "http://localhost:3000/api/technologies/24d6c942-e2da-4962-9eb7-e77ba6f46ab8"
       }
     }
   },

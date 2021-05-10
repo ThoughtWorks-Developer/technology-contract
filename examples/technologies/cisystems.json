@@ -70,12 +70,14 @@
   },
   {
     "title": "Codefresh",
-    "subtitle": "CI System",
     "image": "https://res.cloudinary.com/tw-developer/image/upload/assets/Icons/codefresh.svg",
     "description": "CI/CD Platform built on Kubernetes. Comes with complete GitOps support",
     "_links": {
       "self": {
-        "href": "http://localhost:3000/api/technologies/codefresh"
+        "href": "http://localhost:3000/api/technologies/4d8cc628-91a1-4b2e-adf1-5ebf9c40d923"
+      },
+      "type": {
+        "href": "http://localhost:3000/api/technology_types/cd0ef757-4d0e-4cee-a80e-408b5223a05d"
       }
     }
   },

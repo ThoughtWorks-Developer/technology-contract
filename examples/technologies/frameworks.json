@@ -3,7 +3,7 @@
     "title": ".NET",
     "subtitle": "Framework",
     "description": ".NET Core is a cross-platform version of .NET for building websites, services, and console apps",
-    "image": "https://res.cloudinary.com/tw-developer/image/upload/assets/Icons/dotnet-core.svg",
+    "image": "https://icongr.am/simple/net.svg?size=128&colored=true",
     "versions": [
       "5.0",
       "3.1",
@@ -19,7 +19,7 @@
     "title": "Django",
     "subtitle": "Framework",
     "description": "Django REST framework is a powerful and flexible toolkit for building Web APIs",
-    "image": "https://icongr.am/simple/django.svg?color=092E20",
+    "image": "https://icongr.am/simple/django.svg?size=128&colored=true",
     "versions": [
       "v3.12.1"
     ],

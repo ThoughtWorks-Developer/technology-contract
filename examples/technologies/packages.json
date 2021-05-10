@@ -43,5 +43,19 @@
         "href": "http://localhost:3000/api/technologies/dockerhub"
       }
     }
+  },
+  {
+    "title": "composer",
+    "subtitle": "Package Manager",
+    "description": "A dependency manager for PHP",
+    "image": "https://res.cloudinary.com/tw-developer/image/upload/assets/Icons/placeholder.svg",
+    "versions": [
+      "2.0"
+    ],
+    "_links": {
+      "self": {
+        "href": "http://localhost:3000/api/technologies/composer"
+      }
+    }
   }
 ]

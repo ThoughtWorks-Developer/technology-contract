@@ -3,42 +3,39 @@ openapi: 3.0.2
 info:
   title: Technology API
   version: v1
-  description: Reads and writes Technologies
+  description: Create, manage and access technology information.
   license:
     name: Apache License, Version 2.0
     url: https://www.apache.org/licenses/LICENSE-2.0.html
   contact:
     name: ThoughtWorks
-    url: https://thoughtworks.com
-    
+    url: https://thoughtworks.com 
 servers:
   - url: 'https://my-json-server.typicode.com/ThoughtWorks-Developer/tecnology-contract'
-
+    description: Mock Server
 tags:
   - name: Technologies
     description: |
       Add your description here
-  - name: Software Templates
-    description: |
-      Add your description here
-  
 paths:
   /technologies:
     get:
       tags: 
       - Technologies
       summary: Get list of technologies
-      description: Add description details here
-      operationId: getTechnologyList
+      description: The endpoint allows you to retrieve a paginated list of technologies you are authorized to access
+      operationId: getTechnologies
+      parameters:
+        - $ref: '#/components/parameters/KeyWord'
+        - $ref: '#/components/parameters/Page'
+        - $ref: '#/components/parameters/PageSize'
       responses:
         '200':
           description: OK
           content:
             'application/hal+json':
               schema:
-                type: array
-                items:
-                  $ref: '#/components/schemas/TechnologyResource'
+                $ref: '#/components/schemas/TechnologyPage'
         '401':
           $ref: '#/components/responses/401Unauthorized'
         '403':
@@ -51,17 +48,29 @@ paths:
       tags: 
         - Technologies
       summary: Create new technology
-      description: Add description details here
+      description: Creates new technology resource
       operationId: createTechnology
       requestBody:
-        description: a new technology object
+        required: true
         content:
           application/json:
             schema:
               $ref: '#/components/schemas/Technology'
+            example:
+              title: Codefresh
+              image: https://res.cloudinary.com/tw-developer/image/upload/assets/Icons/codefresh.svg
+              description: CI/CD Platform built on Kubernetes. Comes with complete GitOps support"
+
       responses:
         '201':
           description: Created
+          headers:
+            Location:
+              description: new resource uri
+              schema:
+                type: string
+                format: uri
+              example: 'http://localhost:3000/api/technologies/8404687a-2168-42ae-8aad-f2741f13cb0c'
         '400':
           $ref: '#/components/responses/400BadRequest'
         '401':
@@ -72,7 +81,7 @@ paths:
           $ref: '#/components/responses/500InternalServerError'
         '503':
           $ref: '#/components/responses/503ServiceUnavailable'  
-  /technologies/{name}:
+  /technologies/{technology_id}:
     get:
       tags: 
         - Technologies
@@ -80,7 +89,7 @@ paths:
       description: Add description details here
       operationId: getTechnologyDetails
       parameters:
-        - $ref: '#/components/parameters/TechnologyName'
+        - $ref: '#/components/parameters/TechnologyID'
       responses:
         '200':
           description: OK
@@ -88,8 +97,7 @@ paths:
             'application/hal+json':
               schema:
                 allOf:
-                - $ref: '#/components/schemas/TechnologyResource'
-      
+                - $ref: '#/components/schemas/TechnologyItemResource'
         '401':
           $ref: '#/components/responses/401Unauthorized'
         '403':
@@ -107,7 +115,7 @@ paths:
       description: Updates one or more fields of a technology
       operationId: updateTechnology
       parameters:
-        - $ref: '#/components/parameters/TechnologyName'
+        - $ref: '#/components/parameters/TechnologyID'
       requestBody:
         description: technology object
         content:
@@ -136,7 +144,7 @@ paths:
       description: Add description details here
       operationId: deleteTechnology
       parameters:
-        - $ref: '#/components/parameters/TechnologyName'
+        - $ref: '#/components/parameters/TechnologyID'
       responses:
         '204':
           description: OK
@@ -152,7 +160,39 @@ paths:
           $ref: '#/components/responses/503ServiceUnavailable'
 components:
   parameters:
-    TechnologyName:
+    Authorization:
+      name: Authorization
+      in: header
+      description: Authorization token to ensure a secure connection with the API
+      required: true
+      schema:
+          type: string
+    Page:
+      name: page
+      in: query
+      description: Identifies page to return. Default page is 1.
+      schema:
+        default: 1
+        description: Identifies page to return. Default page is 1.
+        format: int32
+        type: integer
+    PageSize:
+      name: page_size
+      in: query
+      description: Specifies page size. Default page_size is 10, maximum page_size is 100.
+      schema:
+        default: 10
+        description: Specifies page size. Default page_size is 10, maximum page_size is 100.
+        format: int32
+        type: integer
+    KeyWord:
+      name: q
+      in: query
+      description: Key word
+      schema:
+        type: string
+      example: Codefresh
+    TechnologyID:
       name: name
       description: The unique name of the technology to retrieve
       schema:
@@ -171,7 +211,7 @@ components:
             $ref: '#/components/schemas/ErrorResponse'
           example:
             error: Bad request
-            description: Missing required parameter.
+            error_description: The request could not be processed because it contains missing or invalid information.
 
     '401Unauthorized':
       description: Unauthorized
@@ -181,7 +221,7 @@ components:
             $ref: '#/components/schemas/ErrorResponse'
           example:
             error: Unauthorized
-            description: You are not authorized to view this resource
+            error_description: You are not authorized to access the requested resource.
 
     '403Forbidden':
       description: Forbidden
@@ -191,7 +231,7 @@ components:
             $ref: '#/components/schemas/ErrorResponse'
           example:
             error: Forbidden
-            description: You are forbidden from accessing this resource
+            error_description: Incorrect token or insufficient permissions found in the request.
 
     '404NotFound':
       description: Not found
@@ -201,7 +241,17 @@ components:
             $ref: '#/components/schemas/ErrorResponse'
           example:
             error: Not found
-            description: Resource Not found.
+            error_description: Resource Not found.
+
+    '412PreconditionFailed':
+      description: Precondition failed
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ErrorResponse'
+          example:
+            error: Invalid input
+            error_description: The server understands the request, but the format of the request is incorrect.
       
     '500InternalServerError':
       description: Internal Server Error
@@ -209,17 +259,26 @@ components:
         application/json:
           example:
             error: Internal server error
-            description: An unexpected error occurred
+            error_description: An unexpected error occurred
           schema:
             $ref: '#/components/schemas/ErrorResponse'
     
+    '415UnsupportedMediaType':
+      description: Unsupported media type
+      content:
+        application/json:
+          example:
+            error: Unsupported media type
+            description: The server will not process the request because the request body is in a format unsupported by the requested resource.
+          schema:
+            $ref: '#/components/schemas/ErrorResponse'
     '503ServiceUnavailable':
       description: Service unavailable
       content:
         application/json:
           example:
             error: Service unavailable
-            description: Server is not ready to handle the request.
+            error_description: Server is not ready to handle the request.
           schema:
             $ref: '#/components/schemas/ErrorResponse'
     
@@ -227,17 +286,16 @@ components:
     Technology:
       type: object
       properties:
-        name:
-          type: string
         title:
           type: string
-        subtitle:
-          type: string
+          example: Codefresh
         description:
           type: string
+          example: CI/CD Platform built on Kubernetes. Comes with complete GitOps support
         image:
           type: string
           format: url
+          example: https://res.cloudinary.com/tw-developer/image/upload/assets/Icons/codefresh.svg
         versions:
           type: array
           items:
@@ -246,7 +304,7 @@ components:
           type: array
           items:
             type: string
-    TechnologyResource:
+    TechnologyItemResource:
       type: object
       required:
         - _links
@@ -254,14 +312,56 @@ components:
         - $ref: '#/components/schemas/Technology'
       properties:
         _links:
-          $ref: '#/components/schemas/SelfLink'
-    SelfLink:
+          $ref: '#/components/schemas/TechnologyLinks'
+    TechnologyLinks:
         type: object
         required:
           - self
         properties:
           self:
             $ref: '#/components/schemas/ResourceLink'
+          type:
+            $ref: '#/components/schemas/ResourceLink'
+    TechnologyPage:
+      type: object
+      allOf:
+        - $ref: '#/components/schemas/Page'
+      properties:
+        _embedded:
+          type: object
+          properties:
+            data:
+              type: array
+              items:
+                $ref: '#/components/schemas/TechnologyItemResource'
+    Page:
+      type: object
+      properties:
+        _links:
+          $ref: '#/components/schemas/PageLinks'
+        page:
+          type: object
+          properties:
+            size:
+              type: integer
+              format: int32
+            total_elements:
+              type: integer
+              format: int32
+            number:
+              type: integer
+              format: int32
+    PageLinks:
+      type: object
+      required:
+        - self
+      properties:
+        self:
+          $ref: '#/components/schemas/ResourceLink'
+        next:
+          $ref: '#/components/schemas/ResourceLink'
+        prev:
+          $ref: '#/components/schemas/ResourceLink'
     ResourceLink:
       type: object
       required:
@@ -275,6 +375,17 @@ components:
       type: object
       properties:
         error:
+          type: string
+        error_description:
+          type: string
+        error_detail:
+          items:
+            type: array
+            $ref: '#/components/schemas/ErrorDetail'
+    ErrorDetail:
+      type: object
+      properties:
+        field_name:
           type: string
         description:
           type: string

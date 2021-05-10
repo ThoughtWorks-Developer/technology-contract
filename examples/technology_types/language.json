@@ -1,0 +1,10 @@
+{
+    "title": "Language",
+    "image": "https://res.cloudinary.com/tw-developer/image/upload/assets/Icons/placeholder.svg",
+    "description": "Description placeholder, not to exceed 255 characters",
+    "_links": {
+      "self": {
+        "href": "http://localhost:3000/api/technology_types/e19f621d-2f57-4ac8-bf52-9517eeabaca3"
+      }
+    }
+}
